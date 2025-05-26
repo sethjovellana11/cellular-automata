@@ -28,7 +28,6 @@ An Elementary Cellular Automaton is a simple type of cellular automaton. It cons
 This code allows you to specify any of the 256 elementary rules by providing a **rule number** (0-255) when creating an instance of the `ElementaryCellularAutomaton` class.
 
 Common interesting rules include:
-* **Rule 30**: Produces complex, chaotic patterns.
 * **Rule 90**: Generates a fractal pattern resembling the Sierpinski triangle.
 * **Rule 110**: Famously proven to be Turing complete, meaning it can perform any computation.
 * **Rule 184**: Can be used to model simple traffic flow.
@@ -64,3 +63,7 @@ You can easily customize the automaton:
 ![example #1](./images/console-screenshot.png)
 ## Example Output (Rule 90, Width 50, 20 Generations) in node.js
 ![example #2](./images/nodejs-example1.png)
+## Example Output (Rule 110, Width 100, 30 Generations) in node.js
+![example #3](./images/nodejs-example2.png)
+## Example Output (Rule 130, Width 100, 30 Generations) in node.js
+![example #4](./images/nodejs-example3.png)
