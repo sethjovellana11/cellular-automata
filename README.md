@@ -61,3 +61,6 @@ You can easily customize the automaton:
 * **Change the Number of Generations**: Modify the `generations` parameter.
 
 ## Example Output (Rule 90, Width 50, 20 Generations)
+![example #1](./images/console-screenshot.png)
+## Example Output (Rule 90, Width 50, 20 Generations) in node.js
+![example #2](./images/nodejs-example1.png)
