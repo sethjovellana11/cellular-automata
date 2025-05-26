@@ -61,7 +61,7 @@ You can easily customize the automaton:
 
 ## Example Output (Rule 90, Width 50, 20 Generations)
 ![example #1](./images/console-screenshot.png)
-## Example Output (Rule 90, Width 50, 20 Generations) in node.js
+## Example Output (Rule 90, Width 80, 30 Generations) in node.js
 ![example #2](./images/nodejs-example1.png)
 ## Example Output (Rule 110, Width 100, 30 Generations) in node.js
 ![example #3](./images/nodejs-example2.png)
