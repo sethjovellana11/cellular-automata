@@ -23,7 +23,7 @@ An Elementary Cellular Automaton is a simple type of cellular automaton. It cons
 5.  **Generations**: The automaton evolves in discrete time steps called generations. All cells are updated simultaneously based on the rule.
 6.  **Boundary Conditions**: This implementation uses **periodic boundary conditions**, meaning the grid wraps around. The left neighbor of the first cell is the last cell, and the right neighbor of the last cell is the first cell.
 
-## Implemented Rule 📜
+## Implemented Rule
 
 This code allows you to specify any of the 256 elementary rules by providing a **rule number** (0-255) when creating an instance of the `ElementaryCellularAutomaton` class.
 
@@ -33,36 +33,31 @@ Common interesting rules include:
 * **Rule 110**: Famously proven to be Turing complete, meaning it can perform any computation.
 * **Rule 184**: Can be used to model simple traffic flow.
 
-## Files 📁
+## Files
 
 * `cellular_automaton.js`: Contains the JavaScript class `ElementaryCellularAutomaton` and example usage.
+* `index.html`: Open in browser console to see CA.
 
-## How to Run the Code 🚀
+## How to Run the Code
 
 1.  **Git clone the repository**
-2.  **Open in a Browser Console**:
+2.  **Option A: Open in a Browser Console**:
     * Open `index.html` in a web browser (like Chrome, Firefox, Edge).
     * Open the browser's developer console (usually by pressing `F12` or right-clicking on the page and selecting "Inspect" -> "Console"). You will see the output of the automaton printed there.
 
-3.  **Run with Node.js**:
+2.  **Option B: Run with Node.js**:
     * If you have Node.js installed, you can run the script directly from your terminal:
         ```bash
         node cellular_automaton.js
         ```
     * The output will be printed to your terminal.
 
-## Customization 🛠️
+## Customization
 
 You can easily customize the automaton:
 
 * **Change the Rule**: Modify the `rule` parameter in the `runAutomaton` function call (e.g., `runAutomaton(90, 50, 20);`).
 * **Change the Width**: Modify the `width` parameter. This is the number of cells in each generation.
 * **Change the Number of Generations**: Modify the `generations` parameter.
-* **Set an Initial State**:
-    By default, the automaton starts with a single live cell (1) in the middle of the grid. You can provide your own initial generation as an array of 0s and 1s to the `ElementaryCellularAutomaton` constructor:
-    ```javascript
-    const myInitialState = [0, 1, 0, 1, 0, 0, 1, 1, 0, 1];
-    const ca = new ElementaryCellularAutomaton(30, myInitialState.length, myInitialState);
-    ```
 
-## Example Output (Rule 30, Width 21, 10 Generations)
+## Example Output (Rule 90, Width 50, 20 Generations)
